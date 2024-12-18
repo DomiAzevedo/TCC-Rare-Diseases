@@ -172,7 +172,6 @@ if (window.location.pathname.includes("disease-info.html")) {
             const synonyms = formatValue(disease.Synonyms) ? disease.Synonyms.split(";").join(", ") : null;
             diseaseDescription.html(`
                 <h2>General Info</h2>
-                ${formatValue(disease.ClassificationLevel) ? `<p><strong>Classification Level:</strong> ${disease.ClassificationLevel}</p>` : ""}
                 ${formatValue(disease.Contents) ? `<p><strong>Definition:</strong> ${disease.Contents}</p>` : ""}
                 ${formatValue(disease.Info) ? `<p><strong>Info:</strong> ${disease.Info}</p>` : ""}
                 ${synonyms ? `<p><strong>Synonyms:</strong> ${synonyms}</p>` : ""}
